@@ -1,0 +1,61 @@
+---
+title: "A Few of My Favorite Things"
+author: "[*Adam Sisco*](https://awsisco.github.io)"
+date: "June 26, 2019"
+output: html_document
+---
+
+# {.tabset .tabset-fade}
+Here you'll find some running lists with a few of my favorite things on the Web. No raindrops or whiskers here but plenty of other cool stuff.
+
+## Graphics & Data Viz
+Some data visualizations I think are important, novel, or inspiring.
+
+```{r, echo=FALSE}
+library(magrittr)
+library(knitr)
+library(kableExtra)
+library(jsonlite)
+library(tools)
+
+viz_df <- fromJSON("lists/data_viz.json")
+colnames(viz_df) <- toTitleCase(colnames(viz_df))
+
+viz_df %>% kable() %>% kable_styling(bootstrap_options = c("striped", "hover")) %>%
+  column_spec(1, width = "35%") %>%
+  column_spec(2, width = "20%") %>%
+  column_spec(3, width = "45%")
+```
+
+## Cheat Sheets
+A collection of cheat sheets and reference resources with a proven record of making my life easier.
+
+__Color__
+
+* [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml)
+* [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml)
+* [ColorBrewer](http://colorbrewer2.org)
+
+__R & RStudio__
+
+* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+
+__Web Development__
+
+* [CSS Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/)
+* [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp)
+
+## *xkcd* Comics
+Some of my favorite *xkcd* comics.
+
+* [University Website](https://xkcd.com/773/)
+* [Standards](https://xkcd.com/927/)
+
+## Reproducible Research
+
+```{r, echo=FALSE}
+rr_df <- fromJSON("lists/reproducible_research.json")
+colnames(rr_df) <- toTitleCase(colnames(rr_df))
+
+rr_df %>% kable() %>% kable_styling(bootstrap_options = c("striped", "hover"))
+```

@@ -1,0 +1,23 @@
+name: "Adam W. Sisco"
+output_dir: "."
+navbar:
+  title: "Adam W. Sisco"
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Projects"
+      href: projects.html
+    - text: "CV"
+      href: cv.html
+    - text: "Contact"
+      href: contact.html
+output:
+  html_document:
+    theme: default
+    css: css/site_css.css
+    includes:
+      after_body: footer.html

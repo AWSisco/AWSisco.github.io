@@ -1,0 +1,102 @@
+---
+title: Adam Sisco - Home
+output: html_document
+---
+
+<link rel="stylesheet" href="css/press-2.0.8.css" />
+
+<style>
+  .title {
+    display: none;
+  }
+
+  h1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+  }
+  
+  .banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_clouds_amo_2018238_lrg.jpg");
+  }
+  
+  @media(min-width:768px){
+    .container-home {
+      display: flex;
+    }
+    
+    .home-right-box {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+      font-size: 20px;
+    }
+    
+    .home-buttons {
+      display: flex;
+    }    
+  }
+  
+  .container-home div {
+    /*border: 1px #ccc solid;*/
+  }
+  
+  .home-pic {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .home-text {
+    flex: 2;
+    padding: 10px 0px;
+  }
+  
+  .home-buttons {
+    flex: 1;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .home-buttons div {
+    padding: 10px 0px;
+  }
+  
+  .press-custom{
+    --p: #2C3E50;
+    --c: white;
+    --h: #2C3E50;
+    --a: #1e2b37;
+    width:150px;
+  }
+  
+  a.press{
+    text-decoration: none;
+    color: #2C3E50;
+  }
+  
+</style>
+
+# Welcome
+
+<div class="container-home">
+  <div class="home-pic">
+  <img src="images/home_photo.jpg" width="250">
+  </div>
+  <div class="home-right-box">
+  <div class="home-text">
+  <p>I am a first year graduate student in the [Department of Atmospheric and Environmental Sciences](https://www.albany.edu/atmos/){target="blank"} at the University at Albany, studying the impact of midlatitude cyclogenesis on downstream predictability under the advisement of [Professor Ryan Torn](https://www.albany.edu/atmos/ryan-torn.php){target="blank"}. My research interests are related to large-scale atmospheric circulations and extreme precipitation events. I'm also passionate about computational reproducibility in science.</p>
+
+<p>This website serves as my long-form business card and a place to share my personal and professional projects.</p>
+  </div>
+  <div class="home-buttons">
+  <div class="button-about">
+  <a class="press press-custom press-ghost" href="http://awsisco.github.io/about.html">About</a>
+  </div>
+  <div class="button-contact">
+  <a class="press press-custom press-ghost" href="http://awsisco.github.io/contact.html">Contact</a>
+  </div>
+  </div>
+  </div>
+</div>

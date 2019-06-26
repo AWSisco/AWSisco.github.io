@@ -1,0 +1,91 @@
+---
+title: Adam Sisco - Contact
+output: html_document
+---
+
+<link rel="stylesheet" href="icon_libraries/fontawesome-free-5.9.0-web/css/all.css"/>
+<link rel="stylesheet" href="icon_libraries/academicons-1.8.6/css/academicons.min.css"/>
+
+<style>
+  .title {
+    display: none;
+  }
+  
+  h1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+  }
+  
+  .banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_mackenzie_oli_2016312_lrg.jpg");
+  }
+  
+  @media(min-width:768px){
+    .contact-container {
+      display: flex;
+      align-items: stretch;
+    }  
+  }
+  
+  .contact-container div {
+    /*border: 1px #ccc solid;*/
+  }
+  
+  .contact-links {
+    flex: 1;
+    padding-bottom: 20px;
+  }
+  
+  .contact-map {
+    flex: 3;
+    text-align: center;
+  }
+  
+  .html-widget {
+    margin-bottom: 0px;
+}
+</style>
+
+# __Contact__
+<div class="contact-container">
+  <div class="contact-links">
+  <i class="fas fa-envelope fa-lg"></i>&emsp;__email__  
+  [asisco@albany.edu](mailto:asisco@albany.edu)
+
+  <i class="fab fa-twitter fa-lg"></i>&emsp;__twitter__  
+  [AWSisco](https://twitter.com/AWSisco)
+
+  <i class="fab fa-github fa-lg"></i>&emsp;__github__  
+  [AWSisco](https://github.com/AWSisco)
+
+  <i class="fab fa-linkedin-in fa-lg"></i>&emsp;__linkedin__  
+  [adamsisco](https://www.linkedin.com/in/adamsisco)
+
+  <i class="ai ai-orcid ai-lg"></i>&emsp;__orcid__  
+  [0000-0002-5974-3402](https://orcid.org/0000-0002-5974-3402)
+
+  <i class="ai ai-mendeley ai-lg"></i>&emsp;__mendeley__  
+  [adam-sisco](https://www.mendeley.com/profiles/adam-sisco/)
+  </div>
+  <div class="contact-map">
+```{r, echo=FALSE}
+
+library(leaflet)
+
+content <- paste(sep = "<br/>",
+                 "<b>Adam Sisco</b>",
+                 "University at Albany, SUNY",
+                 "Department of Atmospheric and Environmental Sciences",
+                 "1400 Washington Ave.",
+                 "Albany, NY 12222")
+
+leaflet(width = "100%", height = "300px") %>% addTiles() %>%
+  setView(lng = -73.821895, lat = 42.685800, zoom = 15) %>%
+  addMarkers(lng = -73.821895, lat = 42.685800, popup = content)
+```
+  </div>
+</div>
+<center>
+  <a href="https://www.albany.edu/atmos/"><img src="images/logos/albany_logo_wide.png" width="600px" vspace="20px"></a>
+</center>

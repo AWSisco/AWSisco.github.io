@@ -1,0 +1,22 @@
+---
+title: "Obersvations of an Alabama Native Living in Upstate New York"
+author: "[*Adam Sisco*](https://awsisco.github.io)"
+date: "June 26, 2019"
+output: html_document
+---
+
+Having lived in the Deep South my entire life, I am compiling a list of observations as I attend graduate school in a different part of the country. Some might be obvious but intriguing nonetheless. Your perception of a place can change over time, so I expect that documenting things as I experience will be fun to look back on.
+
+1. Dunkin' Donuts. Everywhere.
+2. It's not a bazillion degrees all the time.
+
+```{r, echo = FALSE}
+library(magrittr)
+
+read.delim(file = "data/dly-tavg-normal_USW00003856.txt", sep = " ", skip = 6, header = F) %>% t() %>% as.data.frame() -> hun
+
+read.delim(file = "data/dly-tavg-normal_USW00014735.txt", sep = " ", skip = 6, header = F) %>% t() %>% as.data.frame() -> alb
+
+hun[hun == -8888] <- NA
+alb[alb == -8888] <- NA
+```

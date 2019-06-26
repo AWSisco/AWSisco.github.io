@@ -1,0 +1,24 @@
+---
+title: Adam Sisco - Projects
+output: html_document
+---
+
+<style>
+  .title {
+    display: none;
+  }
+  
+   h1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+  }
+  
+  .banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_seaice_oli_2013168_lrg.jpg");
+  }
+</style>
+
+# Projects
+
+#### Coming soon!

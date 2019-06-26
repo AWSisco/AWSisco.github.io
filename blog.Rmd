@@ -1,0 +1,37 @@
+---
+title: Adam Sisco - Blog
+output: html_document
+---
+
+<style>
+  .title {
+    display: none;
+  }
+  
+  h1 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+  }
+  
+  .banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_faulting_oli_2013211_lrg.jpg");
+  }
+</style>
+
+# Blog
+
+A peak at what I've been up to or what I'm thinking about. More on the inspritation for this blog [here](https://awsisco.github.io/blog-about.html).
+
+```{r, echo=FALSE}
+library(magrittr)
+library(knitr)
+library(kableExtra)
+library(jsonlite)
+library(tools)
+
+blog_df <- fromJSON("lists/blog_posts.json")
+colnames(blog_df) <- toTitleCase(colnames(blog_df))
+
+blog_df %>% kable() %>% kable_styling(bootstrap_options = c("striped", "hover"))
+```
