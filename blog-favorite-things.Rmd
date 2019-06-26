@@ -32,24 +32,24 @@ A collection of cheat sheets and reference resources with a proven record of mak
 
 __Color__
 
-* [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml)
-* [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml)
-* [ColorBrewer](http://colorbrewer2.org)
+* [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml){target="blank"}
+* [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml){target="blank"}
+* [ColorBrewer](http://colorbrewer2.org){target="blank"}
 
 __R & RStudio__
 
-* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
+* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/){target="blank"}
 
 __Web Development__
 
-* [CSS Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/)
-* [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp)
+* [CSS Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/){target="blank"}
+* [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp){target="blank"}
 
 ## *xkcd* Comics
 Some of my favorite *xkcd* comics.
 
-* [University Website](https://xkcd.com/773/)
-* [Standards](https://xkcd.com/927/)
+* [University Website](https://xkcd.com/773/){target="blank"}
+* [Standards](https://xkcd.com/927/){target="blank"}
 
 ## Reproducible Research
 

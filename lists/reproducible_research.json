@@ -1,6 +1,6 @@
 [
  {
-   "title": "[Steps Toward Reproducible Research](https://kbroman.org/steps2rr/)",
+   "title": "[Steps Toward Reproducible Research](https://kbroman.org/steps2rr/){target=\"blank\"}",
    "source": "Karl Broman",
    "comments": "A brief tutorial on the tenets of reproducibility in data analysis."
  }

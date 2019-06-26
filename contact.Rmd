@@ -51,22 +51,22 @@ output: html_document
 <div class="contact-container">
   <div class="contact-links">
   <i class="fas fa-envelope fa-lg"></i>&emsp;__email__  
-  [asisco@albany.edu](mailto:asisco@albany.edu)
+  [asisco@albany.edu](mailto:asisco@albany.edu){target="blank"}
 
   <i class="fab fa-twitter fa-lg"></i>&emsp;__twitter__  
-  [AWSisco](https://twitter.com/AWSisco)
+  [AWSisco](https://twitter.com/AWSisco){target="blank"}
 
   <i class="fab fa-github fa-lg"></i>&emsp;__github__  
-  [AWSisco](https://github.com/AWSisco)
+  [AWSisco](https://github.com/AWSisco){target="blank"}
 
   <i class="fab fa-linkedin-in fa-lg"></i>&emsp;__linkedin__  
-  [adamsisco](https://www.linkedin.com/in/adamsisco)
+  [adamsisco](https://www.linkedin.com/in/adamsisco){target="blank"}
 
   <i class="ai ai-orcid ai-lg"></i>&emsp;__orcid__  
-  [0000-0002-5974-3402](https://orcid.org/0000-0002-5974-3402)
+  [0000-0002-5974-3402](https://orcid.org/0000-0002-5974-3402){target="blank"}
 
   <i class="ai ai-mendeley ai-lg"></i>&emsp;__mendeley__  
-  [adam-sisco](https://www.mendeley.com/profiles/adam-sisco/)
+  [adam-sisco](https://www.mendeley.com/profiles/adam-sisco/){target="blank"}
   </div>
   <div class="contact-map">
 ```{r, echo=FALSE}
@@ -87,5 +87,5 @@ leaflet(width = "100%", height = "300px") %>% addTiles() %>%
   </div>
 </div>
 <center>
-  <a href="https://www.albany.edu/atmos/"><img src="images/logos/albany_logo_wide.png" width="600px" vspace="20px"></a>
+  <a href="https://www.albany.edu/atmos/" target="blank"><img src="images/logos/albany_logo_wide.png" width="600px" vspace="20px"></a>
 </center>
