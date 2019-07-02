@@ -66,17 +66,18 @@ month_labels <- lubridate::month(plot_months, label = TRUE)
 
 colors <- c("#6a3d9a", "#33a02c")
 
-annotation_df <- data.frame(x = c(rep(x = as.Date("2016-04-15"), 3), as.Date("2016-03-08")),
-                            y = c(30, 23, 16, 85),
+annotation_df <- data.frame(x = c(rep(x = as.Date("2016-04-10"), 3), as.Date("2016-03-08")),
+                            y = c(31, 24, 17, 85),
                             label = c("Daily Maximum Temperature",
                                       "Daily Average Temperature",
                                       "Daily Minimum Temperature",
                                       "Huntsville's winter lows are\nhigher than Albany's winter highs."),
-                            hjust = c(0, 0, 0, 0.5))
+                            hjust = c(0, 0, 0, 0.5),
+                            color = c(rep("#6a3d9a", 3), "grey30"))
 
-segment_df <- data.frame(x = rep(as.Date("2016-04-10"), 3),
-                       y = c(30, 23, 16),
-                       xend = c(as.Date("2016-02-01"), as.Date("2016-02-08"), as.Date("2016-02-15")))
+segment_df <- data.frame(x = rep(as.Date("2016-04-08"), 3),
+                       y = c(31, 24, 17),
+                       xend = c(as.Date("2016-01-27"), as.Date("2016-02-06"), as.Date("2016-02-14")))
                        
 ggplot() + geom_line(data = temp_df, aes(x = date, y = tavg, color = location), size = 1) +
   geom_ribbon(data = temp_df, aes(x = date, ymin = tmin, ymax = tmax,
@@ -91,10 +92,10 @@ ggplot() + geom_line(data = temp_df, aes(x = date, y = tavg, color = location), 
   theme(panel.grid.minor = element_blank(),
         legend.title = element_blank(),
         legend.text = element_text(margin = margin(l = 3, unit = "pt"))) +
-  annotate("text", x = annotation_df$x, y = annotation_df$y, size = 3, color = "gray40", label = annotation_df$label, hjust = annotation_df$hjust) +
-  geom_segment(data = segment_df, aes(x = x, y = y, xend = xend, yend = y), arrow = arrow(length = unit(0.02, "npc")), color = "grey40") +
+  annotate("text", x = annotation_df$x, y = annotation_df$y, size = 3, color = annotation_df$color, label = annotation_df$label, hjust = annotation_df$hjust) +
+  geom_segment(data = segment_df, aes(x = x, y = y, xend = xend, yend = y), color = "#6a3d9a") +
   geom_curve(aes(x = as.Date("2016-02-15"), y = 81, xend = as.Date("2016-01-15"), yend = 33), curvature = 0.1,
-             arrow = arrow(length = unit(0.02, "npc")), color = "grey40")
+             arrow = arrow(length = unit(0.02, "npc")), color = "grey30")
 
 cap <- "*Source: [U.S. Daily Climate Normals (1981-2010)](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/climate-normals/1981-2010-normals-data)*"
 ```
