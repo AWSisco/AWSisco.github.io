@@ -10,7 +10,7 @@ Having lived in the Deep South my entire life, I am compiling a list of observat
 1. Dunkin' Donuts. Everywhere.
 2. It's not a bazillion degrees all the time.
 
-```{r AL_NY_climate, echo = FALSE, message = FALSE, fig.width=8, fig.cap=cap}
+```{r AL_NY_climate, echo = FALSE, message = FALSE, fig.width=8, fig.cap=cap, dev='svg'}
 library(lubridate)
 library(readr)
 library(stringr)
