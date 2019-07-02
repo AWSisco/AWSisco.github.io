@@ -21,7 +21,7 @@ output: html_document
 
 # Blog
 
-A peak at what I've been up to or what I'm thinking about. More on the inspritation for this blog [here](https://awsisco.github.io/blog-about.html).
+A peak at what I've been up to or what I'm thinking about. More on the inspritation for this blog [here](https://awsisco.github.io/blog-about-this-blog.html).
 
 ```{r, echo=FALSE}
 library(magrittr)
