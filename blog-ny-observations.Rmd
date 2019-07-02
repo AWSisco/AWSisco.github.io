@@ -1,22 +1,100 @@
 ---
 title: "Obersvations of an Alabama Native Living in Upstate New York"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
-date: "June 26, 2019"
+date: "July 1, 2019"
 output: html_document
 ---
 
-Having lived in the Deep South my entire life, I am compiling a list of observations as I attend graduate school in a different part of the country. Some might be obvious but intriguing nonetheless. Your perception of a place can change over time, so I expect that documenting things as I experience will be fun to look back on.
+Having lived in the Deep South my entire life, I am compiling a list of observations as I attend graduate school in a different part of the country. Some might be obvious but intriguing nonetheless. Your perception of a place can change over time, so I expect that documenting things as I experience them will be fun to look back on.
 
 1. Dunkin' Donuts. Everywhere.
 2. It's not a bazillion degrees all the time.
 
-```{r, echo = FALSE}
-library(magrittr)
+```{r AL_NY_climate, echo = FALSE, message = FALSE, fig.width=8, fig.cap=cap}
+library(lubridate)
+library(readr)
+library(stringr)
+library(ggplot2)
+library(data.table)
 
-read.delim(file = "data/dly-tavg-normal_USW00003856.txt", sep = " ", skip = 6, header = F) %>% t() %>% as.data.frame() -> hun
+extract_temp_data <- function(file = "", replace_char = "", location = ""){
+  #Read from file
+  tavg <- read_lines(paste0("data/", file), skip=68, n_max = 12)
+  tmin <- read_lines(paste0("data/", file), skip=83, n_max = 12)
+  tmax <- read_lines(paste0("data/", file), skip=53, n_max = 12)
+  temps <- c(tavg, tmin, tmax)
+  
+  #Remove section strings
+  temps <- gsub("dly-tavg-normal ", "", temps)
+  temps <- gsub("dly-tmin-normal ", "", temps)
+  temps <- gsub("dly-tmax-normal ", "", temps)
+  
+  temps <- gsub("\\s+", " ", str_trim(temps, side = "both")) #Trim white space
+  temps <- substr(temps, 5, nchar(temps)) #Remove months
+  temps <- gsub(replace_char, "", temps) #Remove flags
+  temps <- gsub(" -8888", "", temps) #Remove all instances of -8888
+  temps <- unlist(strsplit(temps, " ")) #Split into days (1098)
+  temps <- paste0(substr(temps, 1, 2), ".", substr(temps, 3, 3)) #Add demical places
+  temps <- as.numeric(temps) #Change to numeric
+  
+  #Separate out to individual vectors
+  tavg <- temps[1:366]
+  tmin <- temps[367:732]
+  tmax <- temps[733:1098]
+  
+  #Prepare data frame using the lastest leap year, 2016
+  date <- seq.Date(as.Date("2016-01-01"), as.Date("2016-12-31"), by = 1)
 
-read.delim(file = "data/dly-tavg-normal_USW00014735.txt", sep = " ", skip = 6, header = F) %>% t() %>% as.data.frame() -> alb
+  #day <- day(dates)
+  #month <- month(dates, label = TRUE)
+  location <- rep(location, 366)
 
-hun[hun == -8888] <- NA
-alb[alb == -8888] <- NA
+  df <- data.frame(date, location, tmin, tavg, tmax)
+
+  return(df)
+}
+
+hun <- extract_temp_data(file = "USW00003856.normals.txt", replace_char = "C",
+                           location = "Huntsville")
+alb <- extract_temp_data(file = "USW00014735.normals.txt", replace_char = "S",
+                           location = "Albany")
+
+temp_df <- rbindlist(list(alb, hun))[order(date)]
+
+plot_months <- seq.Date(as.Date("2016-01-01"), as.Date("2016-12-31"), by = "month")
+month_labels <- lubridate::month(plot_months, label = TRUE)
+
+colors <- c("#6a3d9a", "#33a02c")
+
+annotation_df <- data.frame(x = c(rep(x = as.Date("2016-04-15"), 3), as.Date("2016-03-08")),
+                            y = c(30, 23, 16, 85),
+                            label = c("Daily Maximum Temperature",
+                                      "Daily Average Temperature",
+                                      "Daily Minimum Temperature",
+                                      "Huntsville's winter lows are\nhigher than Albany's winter highs."),
+                            hjust = c(0, 0, 0, 0.5))
+
+segment_df <- data.frame(x = rep(as.Date("2016-04-10"), 3),
+                       y = c(30, 23, 16),
+                       xend = c(as.Date("2016-02-01"), as.Date("2016-02-08"), as.Date("2016-02-15")))
+                       
+ggplot() + geom_line(data = temp_df, aes(x = date, y = tavg, color = location), size = 1) +
+  geom_ribbon(data = temp_df, aes(x = date, ymin = tmin, ymax = tmax,
+                                  fill = location, color = location),
+              alpha = 0.25, size = 1) +
+  scale_x_date(name = "month",
+               breaks = plot_months, labels = month_labels) +
+  scale_y_continuous(name = "temperature (°F)", breaks = seq(0, 100, by = 10)) +
+  scale_color_manual(values = colors) +
+  scale_fill_manual(values = colors) +
+  theme_minimal() +
+  theme(panel.grid.minor = element_blank(),
+        legend.title = element_blank(),
+        legend.text = element_text(margin = margin(l = 3, unit = "pt"))) +
+  annotate("text", x = annotation_df$x, y = annotation_df$y, size = 3, color = "gray40", label = annotation_df$label, hjust = annotation_df$hjust) +
+  geom_segment(data = segment_df, aes(x = x, y = y, xend = xend, yend = y), arrow = arrow(length = unit(0.02, "npc")), color = "grey40") +
+  geom_curve(aes(x = as.Date("2016-02-15"), y = 81, xend = as.Date("2016-01-15"), yend = 33), curvature = 0.1,
+             arrow = arrow(length = unit(0.02, "npc")), color = "grey40")
+
+cap <- "*Source: [U.S. Daily Climate Normals (1981-2010)](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/climate-normals/1981-2010-normals-data)*"
 ```
