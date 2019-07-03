@@ -1,7 +1,7 @@
 ---
 title: "A Few of My Favorite Things"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
-date: "June 26, 2019"
+date: "June 28, 2019"
 output: html_document
 ---
 
@@ -32,24 +32,24 @@ A collection of cheat sheets and reference resources with a proven record of mak
 
 __Color__
 
-* [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml){target="blank"}
-* [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml){target="blank"}
-* [ColorBrewer](http://colorbrewer2.org){target="blank"}
+* [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml){target="_blank"}
+* [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml){target="_blank"}
+* [ColorBrewer](http://colorbrewer2.org){target="_blank"}
 
 __R & RStudio__
 
-* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/){target="blank"}
+* [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/){target="_blank"}
 
 __Web Development__
 
-* [CSS Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/){target="blank"}
-* [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp){target="blank"}
+* [CSS Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/){target="_blank"}
+* [HTML Color Names](https://www.w3schools.com/colors/colors_names.asp){target="_blank"}
 
 ## *xkcd* Comics
 Some of my favorite *xkcd* comics.
 
-* [University Website](https://xkcd.com/773/){target="blank"}
-* [Standards](https://xkcd.com/927/){target="blank"}
+* [University Website](https://xkcd.com/773/){target="_blank"}
+* [Standards](https://xkcd.com/927/){target="_blank"}
 
 ## Reproducible Research
 

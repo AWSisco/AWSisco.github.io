@@ -267,10 +267,6 @@ $(document).ready(function () {
 <body>
 
 
-<div class="banner-image">
-<div class="attrib">NASA Earth Observatory</div>
-</div>
-
 <div class="container-fluid main-container">
 
 
@@ -323,6 +319,7 @@ $(document).ready(function () {
 </div>
 
 
+<p><link rel="stylesheet" href="css/press-2.0.8.css" /> <link rel="stylesheet" href="icon_libraries/fontawesome-free-5.9.0-web/css/all.css"/></p>
 <style>
   .title {
     display: none;
@@ -337,25 +334,112 @@ $(document).ready(function () {
   .banner-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_seaice_oli_2013168_lrg.jpg");
   }
+  
+  @media(min-width:768px){
+    .proj-container {
+      display: flex;
+    }
+    
+    .proj-right {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    
+    .proj-figure {
+      border-right: 1px #eee solid;
+    }
+    
+    .proj-buttons {
+      display: flex;
+    }    
+  }
+  
+  .proj-container div {
+    /*border: 1px #ccc solid;*/
+  }
+  
+  .proj-figure {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .proj-description {
+    flex: 2;
+  }
+  
+  .proj-buttons {
+    flex: 1;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .proj-buttons div{
+    padding: 10px 0px;
+  }
+  
+  a.press{
+    text-decoration: none;
+    color: white;
+  }
+  
+  ul {
+    padding-left: 2em;
+  }
+  
 </style>
 <div id="projects" class="section level1">
 <h1>Projects</h1>
-<div id="coming-soon" class="section level4">
-<h4>Coming soon!</h4>
+<div>
+<div>
+<h3>
+<a href="https://awsisco.github.io/sea-ice-extent-figure/">Recreating a USGCRP Sea Ice Extent Figure with R</a>
+</h3>
+<div class="proj-container">
+<div class="proj-figure">
+<img src="images/project_thumbnails/sea-ice-extent-figure.png" width="500"/>
+</div>
+<div class="proj-right">
+<div class="proj-description">
+<ul>
+<li>How has September Arctic sea ice extent changed over the last four decades?</li>
+<li>This document provides instructions on how to recreate a USGCRP sea ice extent figure using open data and fully reproducible methods.</li>
+<li>It also demonstrates the creation of polar stereographic maps using shapefiles, sf, and ggplot.</li>
+</ul>
+</div>
+<div class="proj-buttons">
+<div class="proj-view">
+<a class="press press-bluegrey press-round" href="https://awsisco.github.io/sea-ice-extent-figure/">
+<i class="fas fa-external-link-alt"></i>
+View Project
+</a>
+</div>
+<div class="proj-github">
+<a class="press press-bluegrey press-round" href="https://github.com/AWSisco/sea-ice-extent-figure" target="_blank">
+<i class="fab fa-github"></i>
+View Source
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
 <style>
   span {
     font-size: 12px;
-    color: #B8B8B8;
+    color: #bbb;
   }
   
 </style>
 
 <center>
-  <hr width="325px" color=#B8B8B8>
-  <span>Last updated July 2019. View the source on <a href="https://github.com/AWSisco/awsisco.github.io" target="blank">Github</a>.</span>
+  <hr width="325px" color=#eee>
+  <span>Last updated July 2019. View the source on <a href="https://github.com/AWSisco/awsisco.github.io" target="_blank">Github</a>.</span>
 </center>
 
 

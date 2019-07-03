@@ -1,7 +1,7 @@
 ---
 title: "Obersvations of an Alabama Native Living in Upstate New York"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
-date: "July 1, 2019"
+date: "July 03, 2019"
 output: html_document
 ---
 
@@ -16,6 +16,7 @@ library(readr)
 library(stringr)
 library(ggplot2)
 library(data.table)
+library(cowplot)
 
 extract_temp_data <- function(file = "", replace_char = "", location = ""){
   #Read from file
@@ -66,19 +67,13 @@ month_labels <- lubridate::month(plot_months, label = TRUE)
 
 colors <- c("#6a3d9a", "#33a02c")
 
-annotation_df <- data.frame(x = c(rep(x = as.Date("2016-04-10"), 3), as.Date("2016-03-08")),
-                            y = c(31, 24, 17, 85),
-                            label = c("Daily Maximum Temperature",
-                                      "Daily Average Temperature",
-                                      "Daily Minimum Temperature",
-                                      "Huntsville's winter lows are\nhigher than Albany's winter highs."),
-                            hjust = c(0, 0, 0, 0.5),
-                            color = c(rep("#6a3d9a", 3), "grey30"))
+annotation_df <- data.frame(x = c(rep(x = as.Date("2015-12-28"), 6), as.Date("2016-06-15")),
+                            y = c(51.0, 41.5, (32.1+1), (31.3-1), 23.6, 16.0, 20),
+                            label = c("Max", "Avg", "Min", "Max", "Avg", "Min",
+                                      "Winter high temps in Albany are lower\nthan the normal winter lows in Huntsville."),
+                            hjust = c(1, 1, 1, 1, 1, 1, 0.5),
+                            color = c(rep("#33a02c", 3), rep("#6a3d9a", 3), "grey30"))
 
-segment_df <- data.frame(x = rep(as.Date("2016-04-08"), 3),
-                       y = c(31, 24, 17),
-                       xend = c(as.Date("2016-01-27"), as.Date("2016-02-06"), as.Date("2016-02-14")))
-                       
 ggplot() + geom_line(data = temp_df, aes(x = date, y = tavg, color = location), size = 1) +
   geom_ribbon(data = temp_df, aes(x = date, ymin = tmin, ymax = tmax,
                                   fill = location, color = location),
@@ -88,14 +83,15 @@ ggplot() + geom_line(data = temp_df, aes(x = date, y = tavg, color = location), 
   scale_y_continuous(name = "temperature (°F)", breaks = seq(0, 100, by = 10)) +
   scale_color_manual(values = colors) +
   scale_fill_manual(values = colors) +
-  theme_minimal() +
-  theme(panel.grid.minor = element_blank(),
-        legend.title = element_blank(),
+  theme_minimal_grid(font_size = 12, line_size = 0.25, color = "grey90") +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(17, "pt"),
         legend.text = element_text(margin = margin(l = 3, unit = "pt"))) +
-  annotate("text", x = annotation_df$x, y = annotation_df$y, size = 3, color = annotation_df$color, label = annotation_df$label, hjust = annotation_df$hjust) +
-  geom_segment(data = segment_df, aes(x = x, y = y, xend = xend, yend = y), color = "#6a3d9a") +
-  geom_curve(aes(x = as.Date("2016-02-15"), y = 81, xend = as.Date("2016-01-15"), yend = 33), curvature = 0.1,
-             arrow = arrow(length = unit(0.02, "npc")), color = "grey30")
+  annotate("text", x = annotation_df$x, y = annotation_df$y, size = 3,
+           color = annotation_df$color, label = annotation_df$label,
+           hjust = annotation_df$hjust) +
+  geom_curve(aes(x = as.Date("2016-04-05"), y = 20, xend = as.Date("2016-01-20"), yend = 29),
+             curvature = -0.2, arrow = arrow(length = unit(0.02, "npc")), color = "grey30")
 
-cap <- "*Source: [U.S. Daily Climate Normals (1981-2010)](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/climate-normals/1981-2010-normals-data)*"
+cap <- "*Source: [U.S. Daily Climate Normals (1981-2010)](https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/climate-normals/1981-2010-normals-data){target=\"_blank\"}*"
 ```

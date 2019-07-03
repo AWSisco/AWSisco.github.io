@@ -1,0 +1,9 @@
+[
+ {
+   "title": "Recreating a USGCRP Sea Ice Extent Figure with R",
+   "image": "images/project_thumbnails/sea-ice-extent-figure.png",
+   "description": ["How has September Arctic sea ice extent changed over the last four decades?", "This document provides instructions on how to recreate a USGCRP sea ice extent figure using open data and fully reproducible methods.", "It also demonstrates the creation of polar stereographic maps using shapefiles, sf, and ggplot."],
+   "link": "https://awsisco.github.io/sea-ice-extent-figure/",
+   "github": "https://github.com/AWSisco/sea-ice-extent-figure"
+ }
+]

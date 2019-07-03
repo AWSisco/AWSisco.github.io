@@ -1,23 +1,23 @@
 ---
 title: "Some Acknowledgements for this Website"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
-date: "June 26, 2019"
+date: "June 27, 2019"
 output: html_document
 ---
 
 While this website is mine, and mine alone, I'd be remiss to not acknowledge a few people who helped get it off the ground. I know *very* little about making static sites, and what I do know is largely thanks to others. In making this website, I just wanted something that was easy to stand up and maintain. The following people, in no particular order, helped immensely in that endevour by providing either the tools, tutorials, libraries, or inspiration I needed.
 
-* [Nick Strayer](http://nickstrayer.me/){target="blank"}
-* [Emily Zabor](http://www.emilyzabor.com/){target="blank"}
-* [Cody Ogden](https://codyogden.com/){target="blank"}
-* [Sean Cross](https://seankross.com/){target="blank"}
-* [Shannon Ellis](http://www.shanellis.com/){target="blank"}
-* [Robert Mitchell](http://robertmitchellv.com/){target="blank"}
-* [Vincent Bauer](https://stanford.edu/~vbauer/){target="blank"}
+* [Nick Strayer](http://nickstrayer.me/){target="_blank"}
+* [Emily Zabor](http://www.emilyzabor.com/){target="_blank"}
+* [Cody Ogden](https://codyogden.com/){target="_blank"}
+* [Sean Cross](https://seankross.com/){target="_blank"}
+* [Shannon Ellis](http://www.shanellis.com/){target="_blank"}
+* [Robert Mitchell](http://robertmitchellv.com/){target="_blank"}
+* [Vincent Bauer](https://stanford.edu/~vbauer/){target="_blank"}
 
 ---
 
-Also, thank you to [Yihui Xie](https://yihui.name/){target="blank"} for writing the knitr package and creating R Markdown. Making this website became a fun weekend project but only because of these tools and their ease of use.
+Also, thank you to [Yihui Xie](https://yihui.name/){target="_blank"} for writing the knitr package and creating R Markdown. Making this website became a fun weekend project but only because of these tools and their ease of use.
 
 ![](images/hex_stickers/knitr.svg){width=150px} ![](images/hex_stickers/rmarkdown.svg){ width=150px }
 
@@ -25,10 +25,10 @@ Also, thank you to [Yihui Xie](https://yihui.name/){target="blank"} for writing 
 
 The banner images on this site were all obtained from the NASA Earth Observatory. Links to the original images are below.
 
-* [Summer Ship Tracks in the Pacific](https://earthobservatory.nasa.gov/images/92686/summer-ship-tracks-in-the-pacific){target="blank"}
-* [Faults in Xinjiang](https://earthobservatory.nasa.gov/images/82853/faults-in-xinjiang){target="blank"}
-* [Where Trucks Drive on the River](https://earthobservatory.nasa.gov/images/89870/where-trucks-drive-on-the-river){target="blank"}
-* [Icy Art in the Sannikov Strait](https://earthobservatory.nasa.gov/images/144284/icy-art-in-the-sannikov-strait){target="blank"}
-* [Flooding at the Junction of the Mississippi and Ohio Rivers](https://earthobservatory.nasa.gov/images/50475/flooding-at-the-junction-of-the-mississippi-and-ohio-rivers){target="blank"}
-* [California Reservoirs Rise from Drought to Deluge](https://earthobservatory.nasa.gov/images/90062/california-reservoirs-rise-from-drought-to-deluge){target="blank"}
+* [Summer Ship Tracks in the Pacific](https://earthobservatory.nasa.gov/images/92686/summer-ship-tracks-in-the-pacific){target="_blank"}
+* [Faults in Xinjiang](https://earthobservatory.nasa.gov/images/82853/faults-in-xinjiang){target="_blank"}
+* [Where Trucks Drive on the River](https://earthobservatory.nasa.gov/images/89870/where-trucks-drive-on-the-river){target="_blank"}
+* [Icy Art in the Sannikov Strait](https://earthobservatory.nasa.gov/images/144284/icy-art-in-the-sannikov-strait){target="_blank"}
+* [Flooding at the Junction of the Mississippi and Ohio Rivers](https://earthobservatory.nasa.gov/images/50475/flooding-at-the-junction-of-the-mississippi-and-ohio-rivers){target="_blank"}
+* [California Reservoirs Rise from Drought to Deluge](https://earthobservatory.nasa.gov/images/90062/california-reservoirs-rise-from-drought-to-deluge){target="_blank"}
 
