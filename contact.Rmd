@@ -45,9 +45,11 @@ output: html_document
   .html-widget {
     margin-bottom: 0px;
 }
+
 </style>
 
-# __Contact__
+# Contact
+
 <div class="contact-container">
   <div class="contact-links">
   <i class="fas fa-envelope fa-lg"></i>&emsp;__email__  

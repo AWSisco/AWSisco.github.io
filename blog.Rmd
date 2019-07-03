@@ -17,6 +17,7 @@ output: html_document
   .banner-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("images/cropped/cropped_faulting_oli_2013211_lrg.jpg");
   }
+  
 </style>
 
 # Blog
