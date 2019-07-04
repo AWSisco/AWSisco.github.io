@@ -1,9 +1,9 @@
 ---
 title: Adam Sisco - Home
-output: html_document
+output:
+  html_document:
+    css: [css/press-2.0.8.css, css/site_css.css]
 ---
-
-<link rel="stylesheet" href="css/press-2.0.8.css" />
 
 <style>
   .title {

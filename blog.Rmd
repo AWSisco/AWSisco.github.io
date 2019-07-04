@@ -1,6 +1,8 @@
 ---
 title: Adam Sisco - Blog
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
 
 <style>

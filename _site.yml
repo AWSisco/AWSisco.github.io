@@ -18,6 +18,5 @@ navbar:
 output:
   html_document:
     theme: default
-    css: css/site_css.css
     includes:
       after_body: footer.html

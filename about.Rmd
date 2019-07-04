@@ -1,9 +1,9 @@
 ---
 title: Adam Sisco - About
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
-
-<link rel="stylesheet" href="icon_libraries/fontawesome-free-5.9.0-web/css/all.css"/>
 
 <style>
   .title {
