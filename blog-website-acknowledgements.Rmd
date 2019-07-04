@@ -2,7 +2,9 @@
 title: "Some Acknowledgements for this Website"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
 date: "June 27, 2019"
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
 
 While this website is mine, and mine alone, I'd be remiss to not acknowledge a few people who helped get it off the ground. I know *very* little about making static sites, and what I do know is largely thanks to others. In making this website, I just wanted something that was easy to stand up and maintain. The following people, in no particular order, helped immensely in that endevour by providing either the tools, tutorials, libraries, or inspiration I needed.

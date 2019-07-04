@@ -2,7 +2,9 @@
 title: "About this Blog"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
 date: "June 26, 2019"
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
 
 > Few things in this world strike fear into me like the word *blog*.

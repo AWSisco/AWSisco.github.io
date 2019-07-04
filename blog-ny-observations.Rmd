@@ -2,7 +2,9 @@
 title: "Obersvations of an Alabama Native Living in Upstate New York"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
 date: "July 03, 2019"
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
 
 Having lived in the Deep South my entire life, I am compiling a list of observations as I attend graduate school in a different part of the country. Some might be obvious but intriguing nonetheless. Your perception of a place can change over time, so I expect that documenting things as I experience them will be fun to look back on.

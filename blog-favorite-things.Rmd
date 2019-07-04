@@ -2,7 +2,9 @@
 title: "A Few of My Favorite Things"
 author: "[*Adam Sisco*](https://awsisco.github.io)"
 date: "June 28, 2019"
-output: html_document
+output:
+  html_document:
+    css: css/site_css.css
 ---
 
 # {.tabset .tabset-fade}
