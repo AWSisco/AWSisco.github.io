@@ -146,7 +146,7 @@ le Roux, J., K. Bugbee, __A. W. Sisco__, R. Ramachandran, P. Staton, I. Garcia-S
  
 Bugbee, K., __A. W. Sisco__, and J. le Roux, 2019: The alchemy of centralized repositories. *Establishing Trust in Centralized Repositories*, North Bethesda, MD, 2019 Earth Science Information Partners Winter Meeting. 
  
-__Sisco, A. W.__, S. Ramdeen, K. Bugbee, J. Davidson, L. Duffy, P. Neal, T. O. Dabolt, A. Whitehurst, and R. Ramachandran, 2018: Extending the Climate Data Initiative to Geoplatform.gov. *Towards Networks of Trusted Data Repositories in the Earth and Space Sciences*, Washington, D.C., Amer. Geo. Union, [IN24B-07](https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/416846){target="_blank"}. 
+__Sisco, A. W.__, S. Ramdeen, K. Bugbee, J. Davidson, L. Duffy, P. Neal, T. O. Dabolt, A. Whitehurst, and R. Ramachandran, 2018: Extending the Climate Data Initiative to GeoPlatform.gov. *Towards Networks of Trusted Data Repositories in the Earth and Space Sciences*, Washington, D.C., Amer. Geo. Union, [IN24B-07](https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/416846){target="_blank"}. 
  
 Bugbee, K., V. Dixon, R. Ramachandran, D. Shum, J. le Roux, __A. W. Sisco__, P. Staton, and B. E. Hernández, 2018: NASA’s collaborative metadata curation activity to improve Earth science data discovery. *Metadata, Data Models, Semantics, and Collaboration*, Vienna, Austria, European Geosciences Union, [EGU2018-11152](https://meetingorganizer.copernicus.org/EGU2018/EGU2018-11152.pdf){target="_blank"}. 
  
