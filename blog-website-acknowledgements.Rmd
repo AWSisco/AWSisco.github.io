@@ -32,5 +32,3 @@ The banner images on this site were all obtained from the NASA Earth Observatory
 * [Where Trucks Drive on the River](https://earthobservatory.nasa.gov/images/89870/where-trucks-drive-on-the-river){target="_blank"}
 * [Icy Art in the Sannikov Strait](https://earthobservatory.nasa.gov/images/144284/icy-art-in-the-sannikov-strait){target="_blank"}
 * [Flooding at the Junction of the Mississippi and Ohio Rivers](https://earthobservatory.nasa.gov/images/50475/flooding-at-the-junction-of-the-mississippi-and-ohio-rivers){target="_blank"}
-* [California Reservoirs Rise from Drought to Deluge](https://earthobservatory.nasa.gov/images/90062/california-reservoirs-rise-from-drought-to-deluge){target="_blank"}
-
