@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -71,7 +72,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\site_css.css" type="text/css" />
+<link rel="stylesheet" href="css/site_css.css" type="text/css" />
 
 
 
@@ -248,48 +249,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -492,7 +454,7 @@ Advisor: Ryan D. Torn</p>
 Research Associate, <a href="https://earthdata.nasa.gov/esds/impact" target="_blank">NASA IMPACT</a></p>
 <ul>
 <li>Led the Data Curation for Discovery (DCD) project, tasked with improving discovery and interagency use of NASA Earth observation data</li>
-<li>Organized and condcuted meetings with interagency partners and NASA HQ</li>
+<li>Organized and conducted meetings with interagency partners and NASA HQ</li>
 <li>Performed science metadata quality reviews and formulated best practices for describing Earth Observing System data</li>
 <li>Prepared and presented oral/poster presentations at meetings and conferences</li>
 </ul>
@@ -551,7 +513,7 @@ Mississippi State University</p>
 <div id="invited-presentations" class="section level2">
 <h2>Invited Presentations</h2>
 <p>le Roux, J., K. Bugbee, V. Dixon, <strong>A.W. Sisco</strong>, P. Staton, I. Garcia-Solera, and R. Ramachandran, 2018: A metadata curation approach to improve the discoverability and accessibility of NASA Earth science data. <em>Developing Innovative Tools and Services to Enable Data Use across Broad User Communities</em>, Washington, D.C., Amer. Geo. Union, <a href="https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/352181" target="_blank">IN51A-03</a>.</p>
-<p><strong>Sisco, A. W.</strong>, S. Ramdeen, J. Davidson, L. Duffy, and K. Bugbee, 2018: Extending the Climate Data Initiative data collection to Geoplatform.gov. <em>Collaboration and Sharing Through GeoPlatform Communities</em>, Reston, VA, Joint HIFLD/GeoPlatform Session 2018.</p>
+<p><strong>Sisco, A. W.</strong>, S. Ramdeen, J. Davidson, L. Duffy, and K. Bugbee, 2018: Extending the Climate Data Initiative data collection to GeoPlatform.gov. <em>Collaboration and Sharing Through GeoPlatform Communities</em>, Reston, VA, Joint HIFLD/GeoPlatform Session 2018.</p>
 <p><strong>Sisco, A. W.</strong>, K. Bugbee, J. le Roux, P. Staton, B. Freitag, and V. Dixon, 2018: Collaborative metadata curation in support of NASA Earth science data stewardship. <em>2018 Earth Science Data System Working Group Meeting</em>, Annapolis, MD.</p>
 </div>
 <div id="oral-presentations" class="section level2">
@@ -612,6 +574,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

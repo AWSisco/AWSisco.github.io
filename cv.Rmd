@@ -86,7 +86,7 @@ __University of Alabama in Huntsville__; Huntsville, AL [2017--2019]{style="floa
 Research Associate, [NASA IMPACT](https://earthdata.nasa.gov/esds/impact){target="_blank"}
 
 * Led the Data Curation for Discovery (DCD) project, tasked with improving discovery and interagency use of NASA Earth observation data
-* Organized and condcuted meetings with interagency partners and NASA HQ
+* Organized and conducted meetings with interagency partners and NASA HQ
 * Performed science metadata quality reviews and formulated best practices for describing Earth Observing System data
 * Prepared and presented oral/poster presentations at meetings and conferences 
 
@@ -137,7 +137,7 @@ Bugbee, K., J. le Roux, __A. W. Sisco__, P. Staton, I. Garcia-Solera, B. Freitag
 ## Invited Presentations
 le Roux, J., K. Bugbee, V. Dixon, __A.W. Sisco__, P. Staton, I. Garcia-Solera, and R. Ramachandran, 2018: A metadata curation approach to improve the discoverability and accessibility of NASA Earth science data. *Developing Innovative Tools and Services to Enable Data Use across Broad User Communities*, Washington, D.C., Amer. Geo. Union, [IN51A-03](https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/352181){target="_blank"}. 
  
-__Sisco, A. W.__, S. Ramdeen, J. Davidson, L. Duffy, and K. Bugbee, 2018: Extending the Climate Data Initiative data collection to Geoplatform.gov. *Collaboration and Sharing Through GeoPlatform Communities*, Reston, VA, Joint HIFLD/GeoPlatform Session 2018. 
+__Sisco, A. W.__, S. Ramdeen, J. Davidson, L. Duffy, and K. Bugbee, 2018: Extending the Climate Data Initiative data collection to GeoPlatform.gov. *Collaboration and Sharing Through GeoPlatform Communities*, Reston, VA, Joint HIFLD/GeoPlatform Session 2018. 
  
 __Sisco, A. W.__, K. Bugbee, J. le Roux, P. Staton, B. Freitag, and V. Dixon, 2018: Collaborative metadata curation in support of NASA Earth science data stewardship. *2018 Earth Science Data System Working Group Meeting*, Annapolis, MD.
 
