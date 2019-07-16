@@ -36,4 +36,8 @@ My research interests therefore include:
 * Extreme precipitation events
 * Probabilistic forecasting
 
-Despite Python reigning supreme in the Earth and atmospheric sciences, I'm an R enthusiast. Most of this site, in fact, was written using [R Markdown](https://rmarkdown.rstudio.com/){target="_blank"}. In addition to my atmospheric science interests, I'm passionate about data visualization and computational reproducibility in science. I'm also a news junkie, and in my free time, I enjoy reading, laying by the pool, reading while laying by the pool, yoga, listening to my podcast backlog, and cooking new recipes.
+Despite Python reigning supreme in the Earth and atmospheric sciences, I'm an R enthusiast. In fact, most of this site was written using [R Markdown](https://rmarkdown.rstudio.com/){target="_blank"}. In addition to my atmospheric science interests, I'm passionate about data visualization and computational reproducibility in science. I'm also a news junkie, and in my free time, I enjoy reading, laying by the pool, reading while laying by the pool, yoga, listening to my podcast backlog, and cooking new recipes.
+
+<br/>
+
+![](images/st4.png)

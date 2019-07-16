@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -68,7 +69,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\site_css.css" type="text/css" />
+<link rel="stylesheet" href="css/site_css.css" type="text/css" />
 
 
 
@@ -245,18 +246,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -351,7 +340,9 @@ $(document).ready(function () {
 <li>Extreme precipitation events</li>
 <li>Probabilistic forecasting</li>
 </ul>
-<p>Despite Python reigning supreme in the Earth and atmospheric sciences, I’m an R enthusiast. Most of this site, in fact, was written using <a href="https://rmarkdown.rstudio.com/" target="_blank">R Markdown</a>. In addition to my atmospheric science interests, I’m passionate about data visualization and computational reproducibility in science. I’m also a news junkie, and in my free time, I enjoy reading, laying by the pool, reading while laying by the pool, yoga, listening to my podcast backlog, and cooking new recipes.</p>
+<p>Despite Python reigning supreme in the Earth and atmospheric sciences, I’m an R enthusiast. In fact, most of this site was written using <a href="https://rmarkdown.rstudio.com/" target="_blank">R Markdown</a>. In addition to my atmospheric science interests, I’m passionate about data visualization and computational reproducibility in science. I’m also a news junkie, and in my free time, I enjoy reading, laying by the pool, reading while laying by the pool, yoga, listening to my podcast backlog, and cooking new recipes.</p>
+<p><br/></p>
+<p><img src="images/st4.png" /></p>
 </div>
 
 <style>
@@ -383,6 +374,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

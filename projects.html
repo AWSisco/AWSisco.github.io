@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -68,9 +69,9 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\press-2.0.8.css" type="text/css" />
-<link rel="stylesheet" href="icon_libraries\fontawesome-free-5.9.0-web\css\all.css" type="text/css" />
-<link rel="stylesheet" href="css\site_css.css" type="text/css" />
+<link rel="stylesheet" href="css/press-2.0.8.css" type="text/css" />
+<link rel="stylesheet" href="icon_libraries/fontawesome-free-5.9.0-web/css/all.css" type="text/css" />
+<link rel="stylesheet" href="css/site_css.css" type="text/css" />
 
 
 
@@ -246,18 +247,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -463,6 +452,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

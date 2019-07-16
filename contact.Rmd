@@ -76,6 +76,7 @@ library(leaflet)
 
 content <- paste(sep = "<br/>",
                  "<b>Adam Sisco</b>",
+                 "Earth Science 332",
                  "University at Albany, SUNY",
                  "Department of Atmospheric and Environmental Sciences",
                  "1400 Washington Ave.",
