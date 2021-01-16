@@ -12,7 +12,9 @@ navbar:
     - text: "Projects"
       href: projects.html
     - text: "CV"
-      href: cv.html
+#      href: cv.html
+#      href: https://google.com
+      href: https://awsisco.github.io/cv/sisco_cv_jan2021.pdf
     - text: "Contact"
       href: contact.html
 output:

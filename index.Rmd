@@ -86,7 +86,7 @@ output:
   </div>
   <div class="home-right-box">
   <div class="home-text">
-  <p>I am a first year graduate student in the [Department of Atmospheric and Environmental Sciences](https://www.albany.edu/atmos/){target="_blank"} at the University at Albany, studying the impact of midlatitude cyclogenesis on downstream predictability under the advisement of [Professor Ryan Torn](https://www.albany.edu/atmos/ryan-torn.php){target="_blank"}. My research interests are related to large-scale atmospheric circulations and extreme precipitation events. I'm also passionate about computational reproducibility in science.</p>
+  <p>I am a second year graduate student in the [Department of Atmospheric and Environmental Sciences](https://www.albany.edu/atmos/){target="_blank"} at the University at Albany, studying the impact of midlatitude cyclogenesis on downstream predictability under the advisement of [Professor Ryan Torn](https://www.albany.edu/atmos/ryan-torn.php){target="_blank"}. My research interests are related to large-scale atmospheric circulations and extreme precipitation events. I'm also passionate about Earth science data provenance and stewardship.</p>
 
 <p>This website serves as my long-form business card and a place to share my personal and professional projects.</p>
   </div>

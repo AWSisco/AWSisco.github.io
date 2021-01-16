@@ -37,6 +37,7 @@ __Color__
 * [NCL Named Colors](https://www.ncl.ucar.edu/Document/Graphics/named_colors.shtml){target="_blank"}
 * [NCL Color Table Gallery](https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml){target="_blank"}
 * [ColorBrewer](http://colorbrewer2.org){target="_blank"}
+* [D3 Color Schemes](https://observablehq.com/@d3/color-schemes?collection=@d3/d3-scale-chromatic){target="_blank"}
 
 __R & RStudio__
 

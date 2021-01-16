@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -88,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -237,6 +235,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +264,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -359,7 +364,7 @@ div.tocify {
   <a href="projects.html">Projects</a>
 </li>
 <li>
-  <a href="cv.html">CV</a>
+  <a href="https://awsisco.github.io/cv/sisco_cv_jan2021.pdf">CV</a>
 </li>
 <li>
   <a href="contact.html">Contact</a>
@@ -427,7 +432,7 @@ Email: <a href="mailto:asisco@albany.edu">asisco@albany.edu</a> <br/></p>
 </div>
 <div id="interests" class="section level2">
 <h2>Interests</h2>
-<p>Midlatitude synoptic-dynamic meteorology, extratropical cyclones and their impact on downstream predictability, large-scale moisture transport, extreme precipitation events, probabilistic forecasting, data visualization, computational reproducibility in science</p>
+<p>Midlatitude synoptic-dynamic meteorology, extratropical cyclones and their impact on downstream predictability, large-scale moisture transport, extreme precipitation events, ensemble prediction, computational reproducibility in science</p>
 </div>
 <div id="education" class="section level2">
 <h2>Education</h2>
@@ -469,12 +474,19 @@ Mentor: Olufemi A. Omitaomu</p>
 <div id="technical-skills" class="section level2">
 <h2>Technical Skills</h2>
 <p><strong>Programming:</strong> R, NCL, Python, Unix shell scripting<br />
+<strong>Datasets:</strong> GEFS Reforecast V2, ERA5<br />
 <strong>Document preparation:</strong> LaTeX, R Markdown<br />
 <strong>GIS:</strong> ArcGIS, QGIS<br />
 <strong>Platforms:</strong> Linux, Mac, Windows</p>
 </div>
-<div id="professional-activities" class="section level2">
-<h2>Professional Activities</h2>
+<div id="professional-activities-and-service" class="section level2">
+<h2>Professional Activities and Service</h2>
+<div id="service" class="section level4">
+<h4>Service</h4>
+<ul>
+<li>DAES Graduate Program Committee First Year Representative <span style="float:right">2019–2020</span></li>
+</ul>
+</div>
 <div id="memberships" class="section level4">
 <h4>Memberships</h4>
 <ul>
@@ -518,7 +530,6 @@ Mississippi State University</p>
 </div>
 <div id="oral-presentations" class="section level2">
 <h2>Oral Presentations</h2>
-<p>le Roux, J., K. Bugbee, <strong>A. W. Sisco</strong>, R. Ramachandran, P. Staton, I. Garcia-Solera, C. Woods, A. Kaulfus, J. Miller, B. Freitag, and P. Cheng, 2019: Eliminating science friction: A metadata quality framework for the Earth sciences. <em>Establishing Trustworthiness and Suitability of Data Products and Services with Content-Rich, Interoperable and Findable Quality Descriptive Information</em>, Vienna, Austria, European Geosciences Union, <a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-10985.pdf" target="_blank">EGU2019-10985</a>.</p>
 <p>Bugbee, K., <strong>A. W. Sisco</strong>, and J. le Roux, 2019: The alchemy of centralized repositories. <em>Establishing Trust in Centralized Repositories</em>, North Bethesda, MD, 2019 Earth Science Information Partners Winter Meeting.</p>
 <p><strong>Sisco, A. W.</strong>, S. Ramdeen, K. Bugbee, J. Davidson, L. Duffy, P. Neal, T. O. Dabolt, A. Whitehurst, and R. Ramachandran, 2018: Extending the Climate Data Initiative to GeoPlatform.gov. <em>Towards Networks of Trusted Data Repositories in the Earth and Space Sciences</em>, Washington, D.C., Amer. Geo. Union, <a href="https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/416846" target="_blank">IN24B-07</a>.</p>
 <p>Bugbee, K., V. Dixon, R. Ramachandran, D. Shum, J. le Roux, <strong>A. W. Sisco</strong>, P. Staton, and B. E. Hernández, 2018: NASA’s collaborative metadata curation activity to improve Earth science data discovery. <em>Metadata, Data Models, Semantics, and Collaboration</em>, Vienna, Austria, European Geosciences Union, <a href="https://meetingorganizer.copernicus.org/EGU2018/EGU2018-11152.pdf" target="_blank">EGU2018-11152</a>.</p>
@@ -527,6 +538,9 @@ Mississippi State University</p>
 </div>
 <div id="poster-presentations" class="section level2">
 <h2>Poster Presentations</h2>
+<p><strong>Sisco, A. W.</strong>, K.Cook, K. Bugbee, J. Davidson, L.Duffy, T.O. Dabolt, A. Whitehurst, and R. Ramachandran, 2019: Changing climate, changing data: Exposing climate data to new users through GeoPlatform.gov’s Resilience community. <em>Communities, Tools, and Policies That Enable Integration of Earth, Space, and Environmental Science Data and Cyberinfrastructures</em>, San Francisco, CA, Amer. Geo. Union. <a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/615144" target="_blank">IN33B-0822</a>.</p>
+<p>le Roux, J., K. Bugbee, <strong>A. W. Sisco</strong>, P. Staton, C. Woods, A. S. Kaulfus, K. Cook, J. Wood, R. Ramachandran, 2019: Metadata deep dive: Results from a detailed quality assessment of NASA’s Earth oberservation metadata. <em>Improving Error Assessment and Ensuring FAIR Uncertainty Information for Earth Science Observations</em>, San Francisco, CA, Amer. Geo. Union. <a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/549707" target="_blank">IN11C-0675</a>.</p>
+<p>le Roux, J., K. Bugbee, <strong>A. W. Sisco</strong>, , P. Staton, I. Garcia-Solera, C. Woods, A. Kaulfus, J. Miller, B. Freitag, and P. Cheng, 2019: Eliminating science friction: A metadata quality framework for the Earth sciences. <em>Establishing Trustworthiness and Suitability of Data Products and Services with Content-Rich, Interoperable and Findable Quality Descriptive Information</em>, Vienna, Austria, European Geosciences Union, <a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-10985.pdf" target="_blank">EGU2019-10985</a>.</p>
 <p><strong>Sisco, A. W.</strong>, S. Ramdeen, K. Cook, K. Bugbee, J. Davidson, L. Duffy, P. Neal, T. O. Dabolt, A. Whitehurst, and R. Ramachandran, 2019: Improving accessibility of federal Earth science data and services through GeoPlatform.gov. <em>NASA MSFC Science, Technology, and Engineering Jamboree</em>, Huntsville, AL, NASA Marshall Space Flight Center.</p>
 <p>le Roux, J., K. Bugbee, V. Dixon, <strong>A.W. Sisco</strong>, P. Staton, I. Garcia-Solera, and R. Ramachandran, 2019: A metadata curation approach to improve the discoverability and accessibility of NASA Earth science data. <em>NASA MSFC Science, Technology, and Engineering Jamboree</em>, Huntsville, AL, NASA Marshall Space Flight Center.</p>
 <p>Hernández, B.E., K. Bugbee, J. le Roux, T. Beaty, M. Hansen, P. Staton, and <strong>A.W. Sisco</strong>, 2017: From the inside-out: Retrospectives on a metadata improvement process to advance the discoverability of NASA’s earth science data. <em>Approaches for Curation to Data Discovery in the Era of Big Data Variety</em>, New Orleans, LA, Amer. Geo. Union, <a href="https://agu.confex.com/agu/fm17/meetingapp.cgi/Paper/264290" target="_blank">IN21B-0815</a>.</p>
@@ -534,7 +548,7 @@ Mississippi State University</p>
 </div>
 <div id="field-work" class="section level2">
 <h2>Field Work</h2>
-<p><strong>VORTEX Southeast</strong> <span style="float:right">Spring 2016</span></p>
+<p><a href="https://www.nssl.noaa.gov/projects/vortexse/" target="_blank"><strong>VORTEX Southeast</strong></a> <span style="float:right">Spring 2016</span></p>
 <ul>
 <li>Launched mobile soundings into severe convective environments</li>
 </ul>
@@ -554,7 +568,7 @@ Mississippi State University</p>
 
 <center>
   <hr width="325px" color=#eee>
-  <span class = "footer">Last updated August 2019. View the source on <a href="https://github.com/AWSisco/awsisco.github.io" target="_blank">Github</a>.</span>
+  <span class = "footer">Last updated January 2021. View the source on <a href="https://github.com/AWSisco/awsisco.github.io" target="_blank">Github</a>.</span>
 </center>
 
 

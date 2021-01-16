@@ -65,9 +65,9 @@ output:
 
   <i class="ai ai-orcid ai-lg"></i>&emsp;__orcid__  
   [0000-0002-5974-3402](https://orcid.org/0000-0002-5974-3402){target="_blank"}
-
-  <i class="ai ai-mendeley ai-lg"></i>&emsp;__mendeley__  
-  [adam-sisco](https://www.mendeley.com/profiles/adam-sisco/){target="_blank"}
+  
+  <i class="fab fa-instagram fa-lg"></i>&emsp;__instagram__  
+  [adam__sisco](https://www.instagram.com/adam__sisco){target="_blank"}
   </div>
   <div class="contact-map">
 ```{r, echo=FALSE}
